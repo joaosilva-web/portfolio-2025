@@ -10,6 +10,17 @@ border: 0;
 }
 
   body {
-    background-color: ${props => props.theme.backGroundColor}
+    background-color: ${props => props.theme.backGroundColor};
+    font-family: "Roboto", sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans;
+    font-size: 2rem;
   }
-`
+
+  p {
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+  }
+  `
