@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
 export const HomeHeroContainer = styled.div`
-width: 100vw;
 height: calc(100vh - 5rem); //view port height minus Header height
 
 display: flex;
