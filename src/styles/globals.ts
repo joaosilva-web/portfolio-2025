@@ -16,7 +16,8 @@ border: 0;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", sans;
-    font-size: 2rem;
+    font-size: 5rem;
+    color: ${props => props.theme.primaryText};
   }
 
   p {
