@@ -2,17 +2,21 @@ import styled, { keyframes } from "styled-components";
 
 export const HeaderContainer = styled.header`
     height: 5rem;
+    width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+
     padding: 1rem 5rem;
 
-    background: ${props => props.theme.backGroundColor};
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.9px);
-
+    background: rgba( 245, 247, 254, 0.90 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4px );
 `
 
 const blink = keyframes`
