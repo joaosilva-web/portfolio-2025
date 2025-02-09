@@ -7,5 +7,6 @@ export const defaultTheme = {
     primaryText: "#1D265E",
     secondaryText: "#474c63",
     backGroundColor: "#F5F7FE",
-    white: "#FDFDFD"
+    white: "#FDFDFD",
+    hoverWhite: "#FEFEFE"
 }

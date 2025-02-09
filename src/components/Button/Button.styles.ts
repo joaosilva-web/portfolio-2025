@@ -1,22 +1,38 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
-    padding: 1.5rem 8rem;
+interface IButtonProps {
+    variant: 'primary' | 'white'
+    size: 'sm' | 'md' | 'lg'
+}
 
-    background-color: ${props => props.theme.primary};
-    color: ${props => props.theme.white};
+const sizeVariant = {
+    sm: {size: "10rem", fontSize: "1rem"},
+    md: {size: "12rem", fontSize: "1.25rem"},
+    lg: {size: "14rem", fontSize: "1.5rem"},
+  };
+
+
+export const Button = styled.button<IButtonProps>`
+    padding: 1rem 2rem;
+    width: ${props => sizeVariant[props.size].size};
+    font-size: ${props => sizeVariant[props.size].fontSize};
+
+    background-color: ${props => props.variant === 'primary' ? props.theme.primary : props.theme[props.variant]};
+    color: ${props =>  props.variant === 'primary' ? props.theme.white : props.theme.primary};
+    opacity: 0.96;
+    
     
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: 1.5rem;
+    text-transform: uppercase;
 
     border-radius: 8px;
     transition: all .2s ease;
 
     &&:hover {
-        background-color: ${props => props.theme.hover};
+        opacity: 1;
         cursor: pointer;
-        padding: 1.5rem 8.2rem
+        transform: translateY(-0.15rem);
     }
 `
 
