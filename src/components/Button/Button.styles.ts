@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 interface IButtonProps {
     variant: 'primary' | 'white'
-    size: 'sm' | 'md' | 'lg'
+    size: 'xsm' | 'sm' | 'md' | 'lg'
 }
 
 const sizeVariant = {
+    xsm: {size: "10rem", fontSize: "0.75rem"},
     sm: {size: "10rem", fontSize: "1rem"},
     md: {size: "12rem", fontSize: "1.25rem"},
     lg: {size: "14rem", fontSize: "1.5rem"},

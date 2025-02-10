@@ -3,7 +3,7 @@ import * as S from "./Button.styles.ts";
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
     variant?: "primary" | "white";
-    size?: "sm" | "md" | "lg";
+    size?: "xsm" | "sm" | "md" | "lg";
     isAnchor?: boolean;
     href?: string;
   }

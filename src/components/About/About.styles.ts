@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const About = styled.section`
     min-height: 100vh;
     text-align: center;
-    background-color: ${props => props.theme.primary};
+    background-color: ${props => props.theme.primaryText};
     position: relative;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 
     h2 {
         padding-top: 6.25rem;
