@@ -10,7 +10,6 @@ export const About = styled.section`
     h2 {
         padding-top: 6.25rem;
         text-transform: uppercase;
-        font-size: 3rem;
         color: ${props => props.theme.white};
     }
 
@@ -80,7 +79,7 @@ export const SkillCard = styled.div`
     border-radius: 16px;
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 4px );
-    color: ${props => props.theme.primary};
+    color: ${props => props.theme.primaryText};
 
     display: flex;
     justify-content: center;
