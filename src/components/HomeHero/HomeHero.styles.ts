@@ -56,3 +56,29 @@ export const Mouse = styled.div`
     -webkit-animation: ${wheel} 1.3s infinite;
     }
 `
+
+export const SocialMedias = styled.ul`
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+
+    background-color: ${props => props.theme.white};
+    border-radius: 16px;
+
+    li {
+        a{
+            text-decoration: none;
+            color: ${props => props.theme.primaryText};
+            font-size: 1.5rem;
+        }
+    }
+
+    
+`
