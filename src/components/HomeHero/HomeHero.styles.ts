@@ -67,18 +67,37 @@ export const SocialMedias = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
 
-    background-color: ${props => props.theme.white};
-    border-radius: 16px;
+    background-color: ${props => props.theme.primaryText};
+    border-radius: 8px;
 
     li {
+        position: relative;
         a{
             text-decoration: none;
-            color: ${props => props.theme.primaryText};
+            color: ${props => props.theme.backGroundColor};
             font-size: 1.5rem;
         }
     }
 
+    li:hover > span{
+        visibility: visible;
+    }
+
     
+`
+
+export const Tooltip = styled.span`
+    visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
 `
