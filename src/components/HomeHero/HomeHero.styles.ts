@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled, { keyframes } from "styled-components";
 
 export const HomeHeroContainer = styled.div`
@@ -8,21 +9,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-h1 {
-    color: ${props => props.theme.primaryText};
-    font-size: 4rem;
-    font-weight: 900;
-    text-align: center;
-}
-
-p {
-    color: ${props => props.theme.secondaryText};
-    font-size: 1.5rem;
-    text-align: center;
-    max-width: 1000px;
-
-    margin: 2rem 0 4rem 0;
-}
 `
 
 const wheel = keyframes`
@@ -30,6 +16,27 @@ const wheel = keyframes`
     opacity: 0;
     top: 27px;
 }
+`
+
+export const WrapperText = styled(motion.div)`
+    position: relative;
+    overflow: hidden;
+`
+
+export const Heading = styled(motion.h1)`
+    color: ${props => props.theme.primaryText};
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+`
+
+export const Paragraph = styled(motion.p)`
+    color: ${props => props.theme.secondaryText};
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 1000px;
+
+    margin: 2rem 0 4rem 0;
 `
 
 export const Mouse = styled.div`
@@ -55,6 +62,14 @@ export const Mouse = styled.div`
     animation: ${wheel} 1.3s infinite;
     -webkit-animation: ${wheel} 1.3s infinite;
     }
+`
+
+export const Button = styled(motion.button)`
+    cursor: pointer;
+    background-color: ${({theme}) => theme.primary};
+    color: ${({theme}) => theme.white};
+    padding: 1rem;
+    border-radius: 8px;
 `
 
 export const SocialMedias = styled.ul`

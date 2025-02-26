@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -10,18 +10,26 @@ border: 0;
 }
 
   body {
-    background-color: ${props => props.theme.backGroundColor};
+    background-color: ${(props) => props.theme.backGroundColor};
     font-family: "Roboto", sans;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", sans;
     font-size: 2.5rem;
-    color: ${props => props.theme.primaryText};
+    color: ${(props) => props.theme.primaryText};
   }
 
   p {
     font-family: "Montserrat", serif;
     font-size: 1rem;
   }
-  `
+
+
+  button, input, textarea {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    opacity: 0.95;
+  }
+  `;
