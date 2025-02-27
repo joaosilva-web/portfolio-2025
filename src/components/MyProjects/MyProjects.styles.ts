@@ -43,7 +43,7 @@ position: absolute;
 transition: opacity 0.3s ease-in-out;
 opacity: 0;
 display: none;
-background-color: rgba(0, 0, 0, 0.7);
+background-color: rgba(29, 38, 94, 0.75);
 backdrop-filter: blur(4px);
 border-radius: 16px;
 display: flex;
@@ -58,4 +58,11 @@ h2, p, a {
     padding: 0;
     color: ${({theme}) => theme.white};
 }
+`
+
+export const ProjectCardLinks = styled(motion.div)`
+    display: flex;
+    gap: 1rem;
+
+    font-size: 1.5rem;
 `
