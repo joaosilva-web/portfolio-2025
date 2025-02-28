@@ -32,8 +32,13 @@ export const ProjectCard = styled(motion.div)`
     height: 250px;
 
     img {
-        width: 100%
+        width: 100%;
+        transition: all 0.25s ease-in-out;
     }
+
+    &:hover img {
+    transform: scale(1.1);
+}
 `
 
 export const ProjectCardContent = styled(motion.div)`
