@@ -5,6 +5,7 @@ import { Header } from "./components/HeaderComponent/Header";
 import { HomeHero } from "./components/HomeHero/HomeHero";
 import { About } from "./components/About/About";
 import { MyProjects } from "./components/MyProjects/MyProjects";
+import { Experience } from "./components/Experience/Experience"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <HomeHero/>
       <About/>
       <MyProjects/>
+      <Experience/>
     </ThemeProvider>
     
   )

@@ -31,6 +31,10 @@ export const ProjectCard = styled(motion.div)`
     width: 400px;
     height: 250px;
 
+    p {
+        color: white;
+    }
+
     img {
         width: 100%;
         transition: all 0.25s ease-in-out;

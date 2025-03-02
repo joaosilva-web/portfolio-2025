@@ -1,5 +1,6 @@
 import { ArrowSquareOut, GithubLogo } from "@phosphor-icons/react";
 import * as S from "./MyProjects.styles.ts";
+import { SectionContainer } from "../SectionContainer/SectionContaine.tsx";
 
 interface IProjectInfos {
   imgSrc: string;
@@ -62,8 +63,7 @@ const projectsData: IProjectInfos[] = [
 
 export function MyProjects() {
   return (
-    <S.MyProjectsContainer>
-      <h2>My Projects</h2>
+    <SectionContainer themeColor="white" title="My Projects">
       <S.GridContainer>
         {projectsData.map((project) => (
           <S.ProjectCard
@@ -84,6 +84,6 @@ export function MyProjects() {
           </S.ProjectCard>
         ))}
       </S.GridContainer>
-    </S.MyProjectsContainer>
+    </SectionContainer>
   );
 }

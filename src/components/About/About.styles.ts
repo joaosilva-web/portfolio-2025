@@ -1,23 +1,10 @@
 import styled from "styled-components";
 
-export const About = styled.section`
-    min-height: 100vh;
-    text-align: center;
-    background-color: ${props => props.theme.primaryText};
-    position: relative;
-    padding-bottom: 5rem;
-
-    h2 {
-        padding-top: 6.25rem;
-        text-transform: uppercase;
-        color: ${props => props.theme.white};
-    }
+export const About = styled.div`
 
     p {
-        color: ${props => props.theme.white};
         max-width: 1200px;
         margin: 1rem auto 0 auto;
-        font-size: 1.5rem;
         opacity: 0.85;
     }
 `
@@ -27,7 +14,7 @@ position: absolute;
     width: 100%;
     height: 77px;
     display: block;
-    margin-top: calc(-4rem);
+    margin-top: calc(-6rem);
     z-index: -1;
     text-align: center;
     background-image: url("../../../public/curve.svg");
@@ -54,6 +41,14 @@ export const W50Container = styled.div`
         font-size: 1.5rem;
         color: ${props => props.theme.white};
         /* padding: 0 2rem; */
+    }
+
+    p {
+        color: ${props => props.theme.white};
+        max-width: 1200px;
+        margin: 1rem auto 0 auto;
+        font-size: 1.5rem;
+        opacity: 0.85;
     }
 
     p {
