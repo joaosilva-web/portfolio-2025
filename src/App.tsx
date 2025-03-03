@@ -6,6 +6,7 @@ import { HomeHero } from "./components/HomeHero/HomeHero";
 import { About } from "./components/About/About";
 import { MyProjects } from "./components/MyProjects/MyProjects";
 import { Experience } from "./components/Experience/Experience"
+import { Contact } from "./components/Contact/Contact";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <MyProjects/>
       <Experience/>
+      <Contact/>
     </ThemeProvider>
     
   )
